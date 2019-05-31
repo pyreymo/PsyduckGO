@@ -1,6 +1,8 @@
-# 实验报告——基于pygame的弹幕游戏
+# PsyduckGO——基于pygame的弹幕游戏
     2019-05-26 16:42:18
-    数学与科学学院 姚添译
+    v1.0: Original version.
+    2019-05-31 21:40:47
+    v1.1: Config file added.
 <br>
 
 ## 前言
