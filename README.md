@@ -20,7 +20,7 @@
 
 ### 流程控制
 
-![总览](view.png)
+![总览](./readme/view.png)
 总体结构很简单，但是要考虑的细节非常之多。
 在具体实现的代码中，我定义了一个全局变量`game_state`，放在common.py中，用来控制游戏进程：
 * 1 - 开始界面
@@ -56,42 +56,42 @@ Sprite（精灵）类自身有update方法，只要包含Sprite的Group(`pygame.
 
 * 主角夭折版：(绘制要求太高)
 
-    ![0.0](fox.gif)
+    ![0.0](./readme/fox.gif)
 * 主角初版：
 
-    ![1.0](myself2.png)
+    ![1.0](./readme/myself2.png)
     
     ~~不知道为什么感觉有点奇怪~~
     <br>
 * 第二版：
     去掉了花里胡哨的黄瓜，只保留了精髓。
-    ![2.1](myself3.png)
+    ![2.1](./readme/myself3.png)
     
     同时绘制了减速时显示碰撞箱的主角：
-    ![2.2](me_col.png)
+    ![2.2](./readme/me_col.png)
     <br>
 * 最终版
     给游戏加了一个背景故事，不再这么无厘头，所以主角换成了可达鸭：
-    ![3.0](myself4_big.png)
+    ![3.0](./readme/myself4_big.png)
     <br>
 * 尝试过的各种不同的子弹(第一个是白的，看不见)
-    ![1](bullet1.png)
-    ![1](bullet2.png)
-    ![1](bullet3.png)
-    ![1](bullet4.png)
-    ![1](bullet5.png)
+    ![1](./readme/bullet1.png)
+    ![1](./readme/bullet2.png)
+    ![1](./readme/bullet3.png)
+    ![1](./readme/bullet4.png)
+    ![1](./readme/bullet5.png)
 
 ### UI绘制
 
 * 开始界面
-    ![锁后](season2.png)
+    ![锁后](./readme/season2.png)
     <br>
 * 图片背景
-    ![背景](spring1.png)
+    ![背景](./readme/spring1.png)
     <br>
 * 对话背景
     这一部分采用整个图片渲染而不是覆盖矩形框，主要是为提升效率。
-    ![背景](grey_rect.png)
+    ![背景](./readme/grey_rect.png)
 
 ### 代码细节
     为防止疲劳，只放一点点代码
@@ -249,7 +249,7 @@ while True:
     <br>
 
 所以最后换了个思路，直接用Inno setup发布成安装程序了，问题终于解决。
-![打包](打包.png)
+![打包](./readme/打包.png)
 
 ### 屏幕适配
 同学收到游戏后表示：笔记本屏幕小，游戏图片太大，会戳穿屏幕。
