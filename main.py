@@ -145,7 +145,7 @@ def draw_score():
 
 def draw_time(time):
     font = pygame.font.Font("font/euclidb.ttf", 65)
-    text = font.render('                  ', 1, (60, 19, 9), (234, 222, 211))
+    text = font.render('               ', 1, (60, 19, 9), (234, 222, 211))
     text_rect = text.get_rect(center=(width * 0.9010, height * 0.3935))
     spring.blit(text, text_rect)
     text = font.render(str(time // 1000) + '.' + str(time % 1000 // 100) + ' s / 40.0 s', 1, (60, 19, 9),
@@ -215,7 +215,7 @@ def reset():
     common.spring_chapter = 1
 
     font = pygame.font.Font("font/euclidb.ttf", 72)
-    text = font.render('                  ', 1, (60, 19, 9), (234, 222, 211))
+    text = font.render('               ', 1, (60, 19, 9), (234, 222, 211))
     text_rect = text.get_rect(center=(width * 0.9010, height * 0.3935))
     spring.blit(text, text_rect)
 

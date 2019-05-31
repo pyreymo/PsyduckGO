@@ -1,7 +1,8 @@
-from math import sqrt, sin, cos, atan2
 from random import randint
 
 import pygame
+from math import sqrt, sin, cos, atan2
+
 import common
 
 
@@ -36,7 +37,7 @@ class Bullet(pygame.sprite.Sprite):
         if not -500 < self.rect[0] < 1510 or not -600 < self.rect[1] < 1600:
             self.kill()
 
-        if pygame.sprite.collide_circle(me, self):
+        if pygame.sprite.collide_circle(me, self) and not common.allow_cheat:
             print("\nYou lost.")
             group_me.remove()
             group_enemy.remove()

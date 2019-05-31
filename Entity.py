@@ -87,9 +87,8 @@ class Enemy(pygame.sprite.Sprite):
         """检测角色与敌人碰撞"""
         if pygame.sprite.collide_circle(me, self):
 
-            if self.ai == 3:
+            if self.ai == 3 and not common.allow_cheat:
                 common.game_state = 6  # 判断碰到就死
-                pass
 
             if self.id in common.time_dict:
                 del common.time_dict[self.id]
