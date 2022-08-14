@@ -1,4 +1,4 @@
-# PsyduckGO——基于pygame的弹幕游戏
+# PsyduckGO: a bullet dodge game based on PyGame
     2019-05-26 16:42:18
     v1.0: Original version.
     2019-05-31 21:40:47
